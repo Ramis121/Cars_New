@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Cars_New.Models.Basket>
+
+<div class="row mt-5 mb-2">
+    @foreach (var item in Model) 
+    {
+        <div class="col-lg-4">
+            <img class="img-thumbnail" src="@item.img" alt="@item.name"/>
+            <p>Марка:@item.name</p>
+            <p>Короткое описание:@item.longDisk</p>
+            <p>Цена: @item.sum</p>
+            <p>Год выпуска:@item.year</p>
+            <p>Срок дней:@item.guarantee</p>
+            <p>Колеса:@item.wheels</p>
+            <p>Цвет:@item.color</p>
+            <p>Полное описание:@item.Description</p>
+            <p>Город:@item.city</p>
+            <p>Кузов:@item.Body</p>
+            <p>Коробка передач:@item.Transmission</p>
+            <p>Руль:@item.Steering</p>
+            <h1>Номер:@item.phone</h1>
+        </div>
+    }
+</div>

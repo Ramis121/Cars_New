@@ -1,0 +1,23 @@
+﻿@model Cars_New.Models.Car
+
+<form asp-action="GetIdCars" asp-controller="Home">
+    <div class="row mt-5 mb-2">
+   <div class="col-lg-4">
+            <img class="img-thumbnail" src="@Model.img" alt="@Model.name"/>
+            <p>Марка:@Model.name</p>
+            <p>Короткое описание:@Model.longDisk</p>
+            <p>Цена: @Model.sum</p>
+            <p>Год выпуска:@Model.year</p>
+            <p>Срок дней:@Model.guarantee</p>
+            <p>Колеса:@Model.wheels</p>
+            <p>Цвет:@Model.color</p>
+            <p>Полное описание:@Model.Description</p>
+            <p>Город:@Model.city</p>
+            <p>Кузов:@Model.Body</p>
+            <p>Коробка передач:@Model.Transmission</p>
+            <p>Руль:@Model.Steering</p>
+            <h1>Номер:@Model.phone</h1>
+        </div>
+</div>
+
+</form>

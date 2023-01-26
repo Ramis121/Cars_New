@@ -1,0 +1,78 @@
+﻿@model Cars_New.Models.Car
+
+<form asp-action="Buy" asp-controller="Home">
+     <div>
+        <label>Name</label>
+        <input asp-for="name" type="text" />
+    </div>
+
+    <div>
+        <label>Year</label>
+        <input asp-for="year" type="number" /> 
+    </div>
+
+     <div>
+        <label>Color</label>
+        <input asp-for="color" type="text" /> 
+    </div>
+
+     <div>
+        <label>Description</label>
+        <input asp-for="Description" type="text" /> 
+    </div>
+
+     <div>
+        <label>longDisk</label>
+        <input asp-for="longDisk" type="text" /> 
+    </div>
+
+     <div>
+        <label>guarantee</label>
+        <input asp-for="guarantee" type="number" /> 
+    </div>
+
+     <div>
+        <label>sum</label>
+        <input asp-for="sum" type="number" /> 
+    </div>
+
+     <div>
+        <label>img</label>
+        <input type="text" asp-for="img" multiple acept="image/jpg"/> 
+    </div>
+
+     <div>
+        <label>City</label>
+        <input asp-for="city" type="text" /> 
+    </div>
+
+     <div>
+        <label>Body</label>
+        <input asp-for="Body" type="text" /> 
+    </div>
+
+     <div>
+        <label>phone</label>
+        <input asp-for="phone" type="number" /> 
+    </div>
+
+     <div>
+        <label>Steering</label>
+        <input asp-for="Steering" type="text" /> 
+    </div>
+
+     <div>
+        <label>wheels</label>
+        <input asp-for="wheels" type="number" /> 
+    </div>
+
+     <div>
+        <label>Transmission</label>
+        <input asp-for="Transmission" type="text" /> 
+    </div>
+
+    <div>
+        <input type="submit" value="Добавить" />
+    </div>
+
+</form>
